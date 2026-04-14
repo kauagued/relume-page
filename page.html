@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Handlee&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            border: none;
+            background: none;
+            font-family: "Roboto", sans-serif;
+            font-style: normal;
+        }
+        body{
+            background-image: url(/src/assets/images/Placeholder\ Image.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        header{
+            width: 100%;
+            height: 72px;
+            display: flex;
+            padding: 0 64px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header > img{
+            width: 80px;
+            height: 40px;
+        }
+        .header-nav{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 32px;
+        }
+        nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 32px;
+        }
+        nav > button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 4px;
+        }
+        button > p {
+            font-size: 16px;
+            font-weight: 400;
+            color: black;
+            
+        }
+        a{
+            font-size: 16px;
+            font-weight: 400;
+            color: black;
+        }
+        .btn-wraper{
+            display: flex;
+            gap: 16px;
+        }
+        .btn-wraper > button{
+            padding: 8px 20px;
+            border: 1px solid black;
+        }
+        .btn-secondery{
+            background-color: black;
+            color: white;              
+        }
+        
+        main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+        }
+        .hero{
+            justify-content: center;
+            text-align: center;
+            width: 600px;
+            height: 319px;
+        }
+        .hero h1{
+            font-size: 50px;
+            margin-bottom: 24px;
+            white-space: nowrap;
+        }
+        .hero p{
+            margin-bottom: 32px;
+        }
+        .btn-hero{
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+        }
+        .btn-hero button{
+            padding: 8px 20px;
+            border: 1px solid black;
+        }
+        .btn-hero .btn-secondery {
+            background-color: rgba(0, 0, 0, 0.5) ;
+
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            border: 1px solid black;
+            
+        }
+        .contact-us-page{
+            background-color: white;
+            width: 100%;
+            height: 90vw;
+        }
+
+    </style>
+</head>
+
+<body>
+   <header>
+    <img src="/src/assets/images/company-logo.svg" alt="">
+    <div class="header-nav">
+        <nav>
+             <a href="">Link One</a>
+            <a href="">Link Two </a>
+            <a href="">Link Three</a>
+            <button>
+                <p>Link Four</p>
+                <img src="/src/assets/images/chevron-down.svg" alt="image chevron down">
+            </button>
+            
+        </nav>
+        <div class="btn-wraper">
+            <button>Button</button>
+            <button class="btn-secondery">Button</button>
+        </div>
+    </div>
+   </header>
+
+   <main>
+    <section>
+    <div class="hero">
+        <h1>Medium length hero heading <br> goes here</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros  elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo  diam libero vitae erat.</p>
+        <div class="btn-hero">
+          <button>Button</button>
+          <button class="btn-secondery">Button</button>
+        </div>
+    </div>
+    </section>
+    <section class="contact-us-page"> 
+        <h1>contact us</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+        <form action="action-page">
+
+            <label for="name">name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="enter your email" required>
+
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="5" placeholder="type your message"required></textarea>
+
+            <input type="checkbox" id="terms" name="terms"required>
+            <label for="terms">eu concordo com os <a href="/termos-de-uso" target="_blank">termos de uso</a>e a politica de priva</label>
+
+            <button type="submit"> send menssage </button>
+
+        </form>
+    </section>
+   </main>
+
+   <footer></footer>
+
+</body>
+
+</html>
+
